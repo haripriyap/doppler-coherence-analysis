@@ -150,6 +150,15 @@ ML-assisted coherence estimation under mobility
 Integration with scheduling or link adaptation logic (ORAN-aligned direction)
 Extension to MIMO spatial coherence degradation
 
+| Cause | Effect |
+|---|---|
+| High UAV Mobility | Rapid Doppler Variation |
+| Rapid Doppler Variation | Coherence Instability |
+| Coherence Instability | Pilot Estimation Degradation |
+| Pilot Estimation Degradation | Beam Tracking Errors |
+| Beam Tracking Errors | PHY Adaptation Failure |
+| PHY Adaptation Failure | Need for AI-Native Predictive PHY |
+
 ## 11. Status⁵
 This repository represents an exploratory research artifact bridging:
 
