@@ -96,26 +96,29 @@ A trade-off exists between stability and responsiveness in coherence estimation
 
 The results are organized into three conceptual layers:
 
-# 6.1 Channel-level impact of Doppler (Figures A–B)
+### 6.1 Channel-level impact of Doppler (Figures A–B)
 
 These figures characterize how mobility alters signal stationarity and coherence structure at the waveform level.
 
-# 6.2 Estimation-level distortion (Figures C–E)
+### 6.2 Estimation-level distortion (Figures C–E)
 
 These results demonstrate that Doppler-induced non-stationarity introduces systematic bias in coherence estimation and boundary detection, particularly under finite observation windows.
 
-# 6.3 System-level efficiency degradation (Figure F)
+### 6.3 System-level efficiency degradation (Figure F)
 
 This figure shows how estimation errors propagate into reduced efficiency of coherent signal accumulation, defining mobility regimes where standard processing assumptions fail.
 
 ## 7. Repository Structure
+
+```text
 doppler-coherence-analysis/
 │
 ├── figures/              # Result plots and visual analysis
 ├── scripts/              # Simulation and computation modules
-├── technical_note.pdf    # Detailed mathematical and conceptual discussion
+├── technical_note.pdf    # Mathematical and conceptual discussion
 ├── requirements.txt      # Python dependencies
-└── README.md             # This document
+└── README.md             # Repository overview
+```
 
 ## 8. How to Run
 Install dependencies:
