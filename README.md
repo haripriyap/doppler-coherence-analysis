@@ -54,7 +54,7 @@ Instability in boundary detection of correlation structure
 Reduced efficiency in signal accumulation under mobility
 This work studies these effects in a controlled simulation framework.
 
-2. System Model (Conceptual)
+## 2. System Model (Conceptual)
 We consider a time-varying wireless channel influenced by mobility-induced Doppler shifts. The received signal exhibits time-dependent phase rotation and correlation decay governed by Doppler frequency.
 
 Key assumptions:
@@ -64,7 +64,7 @@ Time-limited observation windows
 Stationary processing assumed within each window (approximation)
 The focus is on how violation of stationarity affects coherence-based inference metrics.
 
-3. Objectives
+## 3. Objectives
 This study aims to:
 
 Quantify coherence degradation as a function of Doppler shift
@@ -72,7 +72,7 @@ Analyze estimation error in boundary detection of correlation structure
 Evaluate efficiency loss in signal accumulation under mobility
 Identify regimes where standard coherence assumptions fail
 
-4. Methodology
+## 4. Methodology
 The analysis is performed through simulation-based evaluation using Python.
 
 Core steps:
@@ -83,7 +83,7 @@ Estimate boundary transitions in correlation stability
 Measure deviation from theoretical or low-mobility baseline behavior
 Evaluate efficiency of accumulated signal energy under mobility
 
-5. Key Observations
+## 5. Key Observations
 The following behaviors are consistently observed:
 
 Coherence degradation increases non-linearly with Doppler
@@ -92,23 +92,23 @@ Short observation windows reduce bias but increase variance
 Long observation windows introduce averaging artifacts under Doppler dynamics
 A trade-off exists between stability and responsiveness in coherence estimation
 
-6. Results Overview
+## 6. Results Overview
 
 The results are organized into three conceptual layers:
 
-6.1 Channel-level impact of Doppler (Figures A–B)
+# 6.1 Channel-level impact of Doppler (Figures A–B)
 
 These figures characterize how mobility alters signal stationarity and coherence structure at the waveform level.
 
-6.2 Estimation-level distortion (Figures C–E)
+# 6.2 Estimation-level distortion (Figures C–E)
 
 These results demonstrate that Doppler-induced non-stationarity introduces systematic bias in coherence estimation and boundary detection, particularly under finite observation windows.
 
-6.3 System-level efficiency degradation (Figure F)
+# 6.3 System-level efficiency degradation (Figure F)
 
 This figure shows how estimation errors propagate into reduced efficiency of coherent signal accumulation, defining mobility regimes where standard processing assumptions fail.
 
-7. Repository Structure
+## 7. Repository Structure
 doppler-coherence-analysis/
 │
 ├── figures/              # Result plots and visual analysis
@@ -117,7 +117,7 @@ doppler-coherence-analysis/
 ├── requirements.txt      # Python dependencies
 └── README.md             # This document
 
-8. How to Run
+## 8. How to Run
 Install dependencies:
 
 pip install -r requirements.txt
@@ -128,7 +128,7 @@ Generate figures:
 
 python scripts/generate_figures.py
 
-9. Interpretation
+## 9. Interpretation
 This work emphasizes a key practical insight:
 
 Coherence is not only a function of channel properties, but also of observation strategy under mobility.
@@ -139,7 +139,7 @@ channel dynamics
 observation window design
 and inference methodology
 
-10. Future Extensions
+## 10. Future Extensions
 Potential directions for extension include:
 
 Adaptive windowing strategies for Doppler tracking
@@ -147,7 +147,7 @@ ML-assisted coherence estimation under mobility
 Integration with scheduling or link adaptation logic (ORAN-aligned direction)
 Extension to MIMO spatial coherence degradation
 
-11. Status
+## 11. Status⁵
 This repository represents an exploratory research artifact bridging:
 
 signal processing theory
