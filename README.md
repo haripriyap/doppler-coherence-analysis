@@ -2,6 +2,72 @@
 
 Doppler Coherence Analysis in Mobility-Aware Signal Processing Systems
 
+## Conceptual Flow of the Study
+
+┌──────────────────────────────────────────────────────────────┐
+│                 Mobility / Doppler Increase                 │
+│              (time-varying channel dynamics)                │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────┐
+│           Channel Non-Stationarity Increases                │
+│     Coherence assumptions weaken over observation window    │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────┐
+│              Coherence Structure Distortion                │
+│                                                            │
+│  • Correlation decay                                       │
+│  • Phase instability                                       │
+│  • Reduced temporal coherence                              │
+│                                                            │
+│  (Figures A–B)                                             │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────┐
+│           Estimation and Boundary Detection Bias           │
+│                                                            │
+│  • Boundary estimation drift                               │
+│  • Observation-window mismatch                             │
+│  • Increased estimation uncertainty                        │
+│                                                            │
+│  (Figures C–E)                                             │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────┐
+│         Incorrect Assumption of Signal Stability           │
+│                                                            │
+│  Receiver processing assumes coherence that no longer      │
+│  exists under high mobility conditions                     │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────┐
+│          Inefficient Coherent Signal Accumulation          │
+│                                                            │
+│  • Useful gain decreases                                   │
+│  • Wasted accumulation increases                           │
+│  • Processing efficiency collapses at high Doppler         │
+│                                                            │
+│  (Figure F)                                                │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────┐
+│               System-Level RAN Consequences                │
+│                                                            │
+│  • Reduced scheduling reliability                          │
+│  • Unstable CSI/coherence estimation                       │
+│  • Adaptive PHY control becomes necessary                  │
+│  • ORAN/RIC policy opportunity                             │
+└──────────────────────────────────────────────────────────────┘
+The repository investigates how mobility-induced Doppler dynamics propagate through multiple layers of receiver processing. 
+The analysis connects waveform-level coherence degradation to estimation bias and ultimately to system-level efficiency loss under mobility.
+
 ## 1. Project overview
 
 Abstract
