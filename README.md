@@ -2,6 +2,12 @@
 
 Doppler Coherence Analysis in Mobility-Aware Signal Processing Systems
 
+## Related Technical Note
+
+For a broader system-level interpretation of Doppler coherence behavior in UAV and 6G systems:
+
+👉 https://haripriyap.github.io/2026/05/11/uav-phy-breakdown.html
+
 ## Conceptual Flow of the Study
 
 ┌──────────────────────────────────────────────────────────────┐
@@ -192,5 +198,6 @@ mobility-aware channel modeling
 coherence-based inference reliability
 
 It is intended as a foundation for further research, system modeling, and potential standards-aligned contributions.
+
 
 
